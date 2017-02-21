@@ -1,0 +1,356 @@
+@import 'variables';
+@import 'keyframes';
+
+#match-game {
+    .matchable > * {
+        position: absolute;
+        cursor: pointer;
+        width: 16%;
+        height: 27%;
+        list-style-type: none;
+
+        &:nth-child(1) {
+            top: 5%;
+            left: 10%;
+        }
+
+        &:nth-child(2) {
+            top: 5%;
+            left: 26%;
+        }
+
+        &:nth-child(3) {
+            top: 5%;
+            left: 42%;
+        }
+
+        &:nth-child(4) {
+            top: 5%;
+            left: 58%;
+        }
+
+        &:nth-child(5) {
+            top: 5%;
+            left: 74%;
+        }
+
+        &:nth-child(6) {
+            top: 32%;
+            left: 10%;
+        }
+
+        &:nth-child(7) {
+            top: 32%;
+            left: 26%;
+        }
+
+        &:nth-child(8) {
+            top: 32%;
+            left: 58%;
+        }
+
+        &:nth-child(9) {
+            top: 32%;
+            left: 74%;
+        }
+
+        &:nth-child(10) {
+            top: 59%;
+            left: 10%;
+        }
+
+        &:nth-child(11) {
+            top: 59%;
+            left: 26%;
+        }
+
+        &:nth-child(12) {
+            top: 59%;
+            left: 42%;
+        }
+
+        &:nth-child(13) {
+            top: 59%;
+            left: 58%;
+        }
+
+        &:nth-child(14) {
+            top: 59%;
+            left: 74%;
+        }
+
+        .front,
+        .back {
+            background: url('#{$sprite}img-13-1.png');
+            background-size: 2700px 176px;
+        }
+
+        .front {
+            background-position: -9px -16px;
+        }
+
+        &.frog {
+            .back {
+                background-position: 2331px -14px;
+            }
+        }
+
+        &.cow {
+            .back {
+                background-position: 162px -14px;
+            }
+        }
+
+        &.robin {
+            .back {
+                background-position: 1248px -14px;
+            }
+        }
+
+        &.fox {
+            .back {
+                background-position: 2511px -14px;
+            }
+        }
+
+        &.dove {
+            .back {
+                background-position: 704px -14px;
+            }
+        }
+
+        &.humming-bird {
+            .back {
+                background-position: 883px -14px;
+            }
+        }
+
+        &.rhino {
+            .back {
+                background-position: 2147px -14px;
+            }
+        }
+
+        &.lily-pad {
+            .back {
+                background-position: 1064px -14px;
+            }
+        }
+
+        &.grass {
+            .back {
+                background-position: 523px -14px;
+            }
+        }
+
+        &.worm {
+            .back {
+                background-position: 1427px -14px;
+            }
+        }
+
+        &.mouse {
+            .back {
+                background-position: 1967px -14px;
+            }
+        }
+
+        &.cactus {
+            .back {
+                background-position: 1787px -14px;
+            }
+        }
+
+        &.honeysuckle {
+            .back {
+                background-position: 343px -14px;
+            }
+        }
+
+        &.oxpecker {
+            .back {
+                background-position: 1608px -14px;
+            }
+        }
+    }
+
+    .reveal {
+        > div {
+            top: -8%;
+            margin-top: 0;
+            background-size: 100% 110%;
+        }
+
+        .thumb,
+        .banner,
+        p {
+            opacity: 0;
+        }
+
+        .thumb {
+            position: absolute;
+            top: 18%;
+            left: 28%;
+            width: 43%;
+        }
+
+        .banner {
+            position: absolute;
+            top: 49%;
+            left: 24%;
+            width: 50%;
+        }
+
+        div ul li.OPEN {
+            top: 0;
+            left: 0;
+            opacity: 1;
+            background: none;
+            width: 100%;
+            height: 100%;
+
+            // scss-lint:disable SelectorDepth
+            .thumb,
+            .banner,
+            p {
+                opacity: 1;
+            }
+
+            p {
+                position: absolute;
+                top: 55%;
+                left: 15%;
+                text-align: center;
+                color: $black;
+            }
+
+            &.frog {
+                p {
+                    top: 62%;
+                    left: 25%;
+                }
+            }
+
+            &.robin {
+                .thumb {
+                    top: 15%;
+                    left: 38%;
+                    width: 32%;
+                }
+
+                p {
+                    top: 62%;
+                    left: 23%;
+                }
+            }
+
+            &.fox {
+                .thumb {
+                    top: 18%;
+                    left: 32%;
+                    width: 33%;
+                }
+
+                .banner {
+                    top: 42%;
+                }
+
+                p {
+                    top: 56%;
+                    left: 14%;
+                }
+            }
+
+            &.dove {
+                .thumb {
+                    left: 38%;
+                    width: 25%;
+                }
+
+                .banner {
+                    top: 48%;
+                    left: 14%;
+                    width: 70%;
+                }
+
+                p {
+                    top: 56%;
+                    left: 23%;
+                }
+            }
+
+            &.cow {
+                .thumb {
+                    top: 18%;
+                    left: 31%;
+                    width: 35%;
+                }
+
+                .banner {
+                    top: 43%;
+                    left: 25%;
+                    width: 50%;
+                }
+
+                p {
+                    top: 56%;
+                    left: 23%;
+                }
+            }
+
+            &.humming-bird {
+                .thumb {
+                    top: 16%;
+                    left: 31%;
+                }
+
+                .banner {
+                    top: 51%;
+                    left: 14%;
+                    width: 70%;
+                }
+
+                p {
+                    top: 62%;
+                    left: 21%;
+                }
+            }
+
+            &.rhino {
+                .thumb {
+                    top: 16%;
+                }
+
+                .banner {
+                    top: 51%;
+                    left: 14%;
+                    width: 70%;
+                }
+
+                p {
+                    top: 62%;
+                    left: 19%;
+                }
+            }
+            // scss-lint:enable SelectorDepth
+        }
+
+        .close-reveal {
+            bottom: 40px;
+        }
+    }
+
+    &.STARTED {
+        .matchable > * {
+            .front {
+                animation: cardrevealfront 4s;
+                animation-delay: 1s;
+            }
+
+            .back {
+                animation: cardrevealback 4s;
+                animation-delay: 1s;
+            }
+        }
+    }
+}
