@@ -313,7 +313,7 @@ export default function (props, ref, key) {
                         </p>
                     </skoash.ListItem>,
                     <skoash.ListItem
-                        data-ref="humming-bird"
+                        data-ref="hummingbird"
                          className="humming-bird"
                     >
                         <skoash.Image
